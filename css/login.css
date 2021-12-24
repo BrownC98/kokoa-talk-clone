@@ -78,3 +78,23 @@ a:last-child{
     display: block;
     text-align: center;
 }
+
+.no-mobile{
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: var(--color-yellow);
+}
+
+@media screen and (max-width: 650px)  {
+    .no-mobile{
+        display: none;
+    }
+}
