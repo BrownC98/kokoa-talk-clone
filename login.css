@@ -1,0 +1,80 @@
+:root{
+    --color-yellow : #FAE100
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3px;
+}
+
+.welcome{
+    padding: 60px;
+    text-align: center;
+    padding: 0;
+    margin: 90px 0;
+}
+
+.welcome__title{
+    font-size: 1.5rem;
+}
+
+.welcome__text{
+    width: 60%;
+    opacity: 0.7;
+    margin: auto;
+}
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    margin:0 30px;
+}
+
+.loginform *{
+    margin-bottom: 20px;
+}
+
+.loginform input{
+    font-size: 18px;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.loginform input:focus{
+   border-color: var(--color-yellow);
+   outline: none;
+}
+
+.loginform button{
+    background-color: var(--color-yellow);
+    border: none;
+    padding: 20px 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.loginform button:hover{
+    cursor: pointer;
+}
+
+a:last-child{
+    margin: auto;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
